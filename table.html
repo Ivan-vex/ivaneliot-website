@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Table</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="icon" href="icon.jpg"
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="2" id="header"> shoe boxn</td>
+    </tr>
+    <tr>
+        <td id="menu">Menu <br><a href="ivan.html#">LearnMore</a><br> <a href="sam.html#">taphere</a><br> <a href="form.html#">apply</a></td>
+        <td id="content">
+            <h2 >ORDER HERE</h2>
+            <p id="giz"> we sell our shoes in dollars, model from USA.</p>
+           <img src="SHOE.jpg">
+            <button id="buy" onclick="buy">47$  </button>
+            <img src="shoei.jpg">
+            <button id="buy" onclick="buy">40$  </button>     
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" id="footer">you can contact us here: 1122</td>
+    </tr>
+</table>
+<script>let isPurchased = false;
+
+function buyShoe() {
+  if (!isPurchased) {
+    const userConfirmed = confirm('Are you sure you want to buy this shoe for $47?');
+    if (userConfirmed) {
+      alert('Thank you for your purchase!');
+      document.getElementById('buy').innerHTML = 'Purchased';
+      isPurchased = true;
+      document.getElementById('buy').disabled = true;
+    } else {
+      alert('Purchase cancelled.');
+    }
+  } else {
+    alert('You have already purchased this item.');
+  }
+}
+</script>
+</script>
+</body>
+</html>
+

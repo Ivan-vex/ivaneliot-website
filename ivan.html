@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="ivan.css">
+  <title>my Web Page</title>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <button id="myButton">Click me</button>
+  <script>
+    document.getElementById("myButton").addEventListener("click", function() {
+      alert("Button clicked!");
+      document.querySelector("h1").style.color = "green";
+    });
+  </script>
+</body>
+</html>
